@@ -24,6 +24,6 @@ The two modules differ in the following way:
 * simLostSales.py
 
     It is assumed that any unfulfilled order is lost.  The 
-    service level is estimated based on how
-    late the order was fulfilled
+    service level is estimated based on how much of the 
+    demand was fulfilled
 
