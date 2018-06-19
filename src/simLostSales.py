@@ -74,29 +74,31 @@ class newOrder(Process):
 
 
 # Simulation module
-def simulateNetwork(initialInv, ROP, ROQ, meanDemand, demandStdDev, minLeadTime, maxLeadTime):
+def simulateNetwork(seedinit, initialInv, ROP, ROQ, meanDemand, demandStdDev, minLeadTime, maxLeadTime):
     initialize()  # initialize SimPy simulation instance
+    np.random.seed(seedinit)
     s = stockingFacility(initialInv, ROP, ROQ, meanDemand, demandStdDev, minLeadTime, maxLeadTime)
     activate(s, s.runOperation())
     simulate(until=365)  # simulate for 1 year
     s.serviceLevel = s.totalShipped / s.totalDemand
-    return s  # return the storageNode object
+    return s 
 
 
 ######## Main statements to call simulation ########
 meanDemand = 500.0
-demandStdDev = 50.0
+demandStdDev = 100.0
 minLeadTime = 7
 maxLeadTime = 13
-ROP = 5000.0
-ROQ = 2000.0
+CS = 5000.0
+ROQ = 6000.0
+ROP = max(CS,ROQ)
 initialInv = ROP + ROQ
 
 # Simulate
 replications = 100
 sL = []
 for i in range(replications):
-    nodes = simulateNetwork(initialInv, ROP, ROQ, meanDemand, demandStdDev, minLeadTime, maxLeadTime)
+    nodes = simulateNetwork(i,initialInv, ROP, ROQ, meanDemand, demandStdDev, minLeadTime, maxLeadTime)
     sL.append(nodes.serviceLevel)
 
 sLevel = np.array(sL)
