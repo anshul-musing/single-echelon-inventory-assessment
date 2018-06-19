@@ -1,6 +1,6 @@
 # single-echelon inventory simulation with SimPy
 
-The modules in this repo simulate a single-echelon supply chain
+The modules in this repo simulates a single-echelon supply chain
 and calculates inventory profile (along with associated inventory 
 parameters such as on-hand, inventory position, service level, etc.) 
 across time.  We use SimPy discrete event simulation package.
