@@ -27,3 +27,7 @@ The two modules differ in the following way:
     service level is estimated based on how much of the 
     demand was fulfilled
 
+The modules have been used to validate literature models.  The
+validation study is published [here]
+
+[here]: https://arxiv.org/abs/1806.07427
