@@ -1,7 +1,6 @@
 __author__ = 'Anshul Agarwal'
 
-"""
-This module simulates a single-echelon supply chain
+"""This module simulates a single-echelon supply chain
 and calculates inventory profile (along with associated inventory 
 parameters such as on-hand, inventory position, service level, etc.) 
 across time
@@ -60,8 +59,7 @@ class stockingFacility(Process):
                 self.inventory_position += self.ROQ
 
 
-"""
-Class for a new order placed by the facility
+"""Class for a new order placed by the facility
 Whenever facility places an order, a new object of
 the following class is created
 """
