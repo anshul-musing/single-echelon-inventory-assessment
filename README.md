@@ -30,4 +30,7 @@ The two modules differ in the following way:
 The modules have been used to validate literature models.  The
 validation study is published [here]
 
+We provide modules built using both versions 2.0 and 3.0 of SimPy.
+Both are available in separate folders in /src
+
 [here]: https://arxiv.org/abs/1806.07427
