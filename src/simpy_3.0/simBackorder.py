@@ -81,7 +81,7 @@ demandStdDev = 100.0
 minLeadTime = 7
 maxLeadTime = 13
 CS = 5000.0
-ROQ = 6000.0
+ROQ = 2000.0
 ROP = max(CS,ROQ)
 initialInv = ROP + ROQ
 
