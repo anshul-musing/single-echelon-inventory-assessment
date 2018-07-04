@@ -1,4 +1,3 @@
-__author__ = 'Anshul Agarwal'
 
 """This module simulates a single-echelon supply chain
 and calculates inventory profile (along with associated inventory 
@@ -16,6 +15,9 @@ of the demand was fulfilled
 Demand is assumed to be Normally distributed
 Lead time is assumed to follow a uniform distribution
 """
+
+__author__ = 'Anshul Agarwal'
+
 
 from SimPy.Simulation import *
 import numpy as np
