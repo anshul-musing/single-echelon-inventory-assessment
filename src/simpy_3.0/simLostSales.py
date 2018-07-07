@@ -8,10 +8,9 @@ The system follows a reorder point-reorder quantity policy
 If inventory position <= ROP, an order of a fixed reorder 
 quantity (ROQ) is placed by the facility
 
-It is assumed that any unfulfilled order is backordered
-and is fulfilled whenever the material is available in the
-inventory.  The service level is estimated based on how
-late the order was fulfilled
+It is assumed that any unfulfilled order is lost
+The service level is estimated based on how much
+of the demand was fulfilled
 
 Demand is assumed to be Normally distributed
 Lead time is assumed to follow a uniform distribution
