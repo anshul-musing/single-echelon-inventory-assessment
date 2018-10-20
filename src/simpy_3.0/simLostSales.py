@@ -91,5 +91,5 @@ for i in range(replications):
     sL.append(nodes.serviceLevel)
 
 sLevel = np.array(sL)
-print "Avg. service level: " + str(np.mean(sLevel))
-print "Service level standard deviation: " + str(np.std(sLevel))
+print("Avg. service level: " + str(np.mean(sLevel)))
+print("Service level standard deviation: " + str(np.std(sLevel)))
